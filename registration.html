@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__flex">
+                    <div class="header__item">
+                        <img src="/img/logo_header.svg" class="logo" width="44" height="38" alt="Логотип">
+                        <img src="/img/search.svg" width="26" height="26" alt="Лупа">
+                        <input type="search" class="search">
+                    </div>
+                    <ul class="header__list header__item">type="button"
+                        <li class="header__list-item"><button type="button" class="header__button header__burger"><img
+                                    src="/img/header_burger.svg" width="32" height="23" alt="Бургер"></button></li>
+                        <li class="header__list-item"><button type="button" class="header__button header__human"><img
+                                    src="/img/header_human.svg" width="29" height="29" alt="Человек"></button></li>
+
+                        <li class="header__list-item header__list-item--margin"><button type="button"
+                                class="header__button header__basket"><img src="/img/header_basket.svg" width="32"
+                                    height="29" alt="Корзина"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="bread-crumbs">
+                <div class="container">
+                    <p class="bread-crumbs__text">Registration</p>
+                </div>
+            </section>
+            <section class="registration">
+                <div class="container">
+                    <div class="registration-flex">
+                        <div class="registration__column registration__column-form">
+                            <div class="registration__item registration__item-form">
+                                <form action="#" method="POST" name="registration" class="registration-form">
+                                    <fieldset class="registration-fieldset">
+                                        <legend class="registration__legends">Your Name</legend>
+                                        <input type="text" class="registration-details " name="username"
+                                            placeholder="First Name" value="">
+                                        <input type="text" class="registration-details" name="username"
+                                            placeholder="Last Name" value="">
+                                    </fieldset>
+                                    <div class="registration__radio">
+                                        <input type="radio" id="gender" name="gender" checked>
+                                        <label for="gender">Male</label>
+
+                                        <input type="radio" id="gender" name="gender">
+                                        <label for="gender">Female</label>
+                                    </div>
+                                    <fieldset class="registration-fieldset">
+                                        <legend class="registration__legends">Login details</legend>
+                                        <input type="email" class="registration-details" placeholder="Email">
+                                        <input type="password" class="registration-details" placeholder="Password">
+                                        <p class="registratio__clarification-text">Please use 8 or more characters, with
+                                            at least 1 number and a mixture of
+                                            uppercase and lowercase letters</p>
+                                    </fieldset>
+                                    <button class="registration-button" type="submit">Join now</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="registration__column registration__loyalty">
+                            <div class="registration__item ">
+                                <h2 class="registration__h2">Loyalty has its perks</h2>
+                                <p class="registration__desc">Get in on the loyalty program where you can earn points
+                                    and unlock serious perks.
+                                    Starting with these as soon as you join:</p>
+                                <ul class="registration-list">
+                                    <li class="registration-list__item">
+                                        <p class="registration-list__text">15% off welcome offer
+                                        </p>
+                                    </li>
+                                    <li class="registration-list__item">
+                                        <p class="registration-list__text">Free shipping, returns and exchanges on all
+                                            orders
+
+                                        </p>
+                                    </li>
+                                    <li class="registration-list__item">
+                                        <p class="registration-list__text">$10 off a purchase on your birthday
+
+                                        </p>
+                                    </li>
+                                    <li class="registration-list__item">
+                                        <p class="registration-list__text">Early access to products</p>
+                                    </li>
+                                    <li class="registration-list__item">
+                                        <p class="registration-list__text">Exclusive offers & rewards</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__top-flex">
+                        <div class="footer__column">
+                            <div class="footer__item">
+                                <img src="/img/footer-picture.png" class="footer__top-picture" width="96" height="96"
+                                    alt="Девушка">
+                                <p class="footer__top-quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                                    pulvinar
+                                    purus condimentum“</p>
+                            </div>
+                        </div>
+
+                        <div class="footer__column">
+                            <div class="footer__item">
+                                <form action="#" method="POST" name="mail">
+                                    <fieldset class="footer-fieldset">
+                                        <legend class="legend"> <span> Subscribe </span>for our newletter and promotion
+                                        </legend>
+                                        <input type="email" required placeholder="Enter Your Email">
+                                        <input type="submit" value="Subscribe">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom ">
+                <div class="container">
+                    <div class="footer__flex">
+                        <p class="footer__bottom-text">© 2021 Brand All Rights Reserved.</p>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__icon footer__icon--hover"><img src="/img/facebook-icon.svg"
+                                        alt="Фэйсбук"></a></li>
+                            <li><a href="#" class="footer__icon"><img src="/img/instagram-icon.svg" alt="Инстаграм"></a>
+                            </li>
+                            <li><a href="#" class="footer__icon"><img src="/img/social_network-icon.svg"
+                                        alt="Соц. сеть"></a>
+                            </li>
+                            <li><a href="#" class="footer__icon footer__icon--margin"><img src="/img/twitter-icon.svg"
+                                        alt="Твиттер"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
