@@ -81,6 +81,7 @@ body {
 
 .header__list-item {
     margin-right: 33px;
+    transition: all 500ms ease 0s;
 }
 
 .header__list-item--margin {
@@ -216,12 +217,12 @@ body {
     color: #222222;
 }
 
-.intro__item--before {
+.intro__item-before {
     padding-left: 92px;
 
 }
 
-.intro__item--before::before {
+.intro__item-before::before {
     content: "";
     width: 12px;
     height: 82px;
@@ -452,6 +453,7 @@ body {
     border: 1px solid #FF6A6A;
     padding: 14px 38.5px 14px 38.5px;
     margin: 0 auto;
+    transition: all 1s ease 0s;
 }
 
 .fetured__button:hover {
@@ -576,6 +578,12 @@ body {
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
     cursor: pointer;
+    transition: all 600ms ease 0s;
+}
+
+.footer__button-subscribe:hover {
+    transform: scale(0.9);
+    box-shadow: 2px 2px 5px 1px black;
 }
 
 .footer__bottom {
@@ -604,6 +612,10 @@ body {
 
 .footer__icon {
     margin: 0px 8px 0px 0px;
+}
+
+.footer-icon-background, .footer-icon-color {
+    transition: all 400ms ease 0s;
 }
 
 .footer__icon--hover:hover .footer-icon-background {
@@ -728,7 +740,7 @@ body {
     margin: 0px 0px 20px 0px;
 }
 
-.registratio__clarification-text {
+.registration__clarification-text {
     margin: 0px 0px 39px 0px;
 }
 
@@ -744,6 +756,7 @@ body {
     border: 1px solid #F16D7F;
     color: #F16D7F;
     background: #FFFFFF;
+    transition: all 500ms ease 0s;
 }
 
 .registration-button::after {
@@ -843,6 +856,7 @@ body {
     flex-grow: 1;
 }
 .cart__h2 {
+    display: inline-block;
     font-family: Lato;
     font-style: normal;
     font-weight: 400;
@@ -904,6 +918,11 @@ body {
     line-height: 17px;
     color: #000000;
     text-transform: uppercase;
+    transition: all 500ms ease 0s;
+}
+
+.cart-buttons__button:hover {
+    box-shadow: 3px 3px 10px 3px black;
 }
 
 .cart__item {
@@ -1013,29 +1032,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F16D7F;
+    border:1px solid #F16D7F;
     margin-top: 39px;
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #F16D7F;
     text-transform: uppercase;
     align-self: center;
     width: 75%;
     min-height: 50px;
     text-align: center;
+    transition: all 500ms ease 0s;
 }
 
 .cart__form-ordering-button::before {
     content: "";
     height: 1px;
     width: 75%;
-    background:  #E2E2E2;
+    background:#E2E2E2;
     position: absolute;
     top: 100px;
     left: 46px;
+}
+
+.cart__form-ordering-button:hover {
+    background: #F16D7F;
+    color: #FFFFFF;
 }
 
 
@@ -1245,6 +1270,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    transition: all 300ms ease 0s;
 }
 
 .new-collection__button:hover {
@@ -1393,6 +1419,16 @@ body {
         display: flex;
         justify-content: space-between;
     }
+    
+    .cart__h2 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .cart__text  {
+        font-size: 14px;
+        line-height: 17px;
+    }
 
     .cart__form {
         width: 48%;
@@ -1416,7 +1452,56 @@ body {
     }
 }
 
+@media (max-width: 520px) {
+    /* cart.html */
 
+    .cart__item-img {
+        width: 143px;
+        height: 188px;
+    }
+
+    .cart__h2 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .cart__text  {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .cart__h2 {
+        margin-bottom: 25px;
+    }
+
+    .cart__features {
+        padding: 13px 0px 0px 17px;
+    }
+
+    .cart__features-cross {
+        width: 9px;
+        top: 2.1%;
+    }
+
+    .cart-buttons__button {
+        font-weight: 400; 
+        font-size: 12px;
+        line-height: 14px;
+        padding: 9px 18px;
+    }
+
+    .cart__item {
+        flex-direction: column;
+    }
+
+    .cart__form {
+        width: 100%;
+    }
+
+    .cart__form-ordering {
+        width: 100%;
+    }
+}
 
 
 
@@ -1451,7 +1536,7 @@ body {
         line-height: 24px;
     }
 
-    .intro__item--before::before {
+    .intro__item-before::before {
         width: 12px;
         height: 65px;
     }

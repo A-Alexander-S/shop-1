@@ -1,8 +1,5 @@
 
 
-// Слайдер
-
-// Смещение от левого края
 
 const images = document.querySelectorAll('.slider__img');
 const sliderFlex = document.querySelector('.slider-flex');
@@ -68,25 +65,3 @@ function rollSlider() {
 }
 
 
-
-
-
-
-// let offset = 0;
-// const sliderFlex = document.querySelector('.slider-flex');
-
-// document.querySelector('.slider__next').addEventListener('click', function () {
-//     offset = offset + 360;
-//     if (offset >= 1080) {
-//         offset = 0;
-//     }
-//     sliderFlex.style.left = -offset + 'px';
-// });
-
-// document.querySelector('.slider__prev').addEventListener('click', function () {
-//     offset = offset - 360;
-//     if (offset < 0) {
-//         offset = 720;
-//     }
-//     sliderFlex.style.left = -offset + 'px';
-// });
